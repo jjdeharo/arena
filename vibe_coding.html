@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Vibe coding | Inteligencia Artificial en Educación </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Juan José de Haro para Cedec" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>$exe.options.atools.translator=true</script>
+<script>
+// HACKeXe - Abre todos los enlaces en una pestaña nueva
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('a').forEach(function(link) {
+        var isExternal = new URL(link.href).host !== window.location.host;
+        if (isExternal) {
+            link.target = '_blank';
+        }
+    });
+});
+</script></head>
+<body class="exe-web-site exe-search-bar exe-atools" id="exe-node-130"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Inteligencia Artificial en Educación</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inteligencia artificial en educación</a></li>
+   <li><a href="novedades.html" class="no-ch">Novedades</a></li>
+   <li><a href="qu_es_la_ia.html" class="no-ch">¿Qué es la IA?</a></li>
+   <li><a href="importancia_en_educacin.html" class="no-ch">Importancia en educación</a></li>
+   <li><a href="aspectos_ticos_y_limitaciones.html" class="daddy">Aspectos éticos y limitaciones</a>
+   <ul class="other-section">
+      <li><a href="a_quin_pertenece.html" class="no-ch">¿A quién pertenece?</a></li>
+      <li><a href="lmites_de_la_ia.html" class="no-ch">Límites de la IA</a></li>
+      <li><a href="deteccin_del_plagio.html" class="no-ch">Detección del plagio</a></li>
+      <li><a href="pistas_sobre_mal_uso_de_ia.html" class="no-ch">Pistas sobre mal uso de IA</a></li>
+      <li><a href="introduccin_de_ia_en_clase.html" class="no-ch">Introducción de IA en clase</a></li>
+      <li><a href="trabajando_la_tica_en_clase.html" class="no-ch">Trabajando la ética en clase</a></li>
+      <li><a href="tica_de_los_contenidos.html" class="no-ch">Ética de los contenidos</a></li>
+   </ul>
+   </li>
+   <li><a href="ia_generativa_ideas_y_recursos.html" class="no-ch">IA Generativa: Ideas y recursos</a></li>
+   <li class="current-page-parent"><a href="ia_generativa_de_texto.html" class="current-page-parent daddy">IA Generativa de texto</a>
+   <ul>
+      <li><a href="formular_preguntas.html" class="daddy">Formular preguntas</a>
+      <ul class="other-section">
+         <li><a href="crear_buenos_prompts.html" class="no-ch">Crear buenos prompts</a></li>
+         <li><a href="modelo_rita.html" class="no-ch">Modelo R-I-T-A</a></li>
+         <li><a href="optimizar_la_comprensin.html" class="no-ch">Optimizar la comprensión</a></li>
+         <li><a href="mejorar_chatgpt.html" class="no-ch">Mejorar ChatGPT</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="vibe_coding.html" class="active no-ch">Vibe coding</a></li>
+   </ul>
+   </li>
+   <li><a href="chatbots.html" class="daddy">Chatbots</a>
+   <ul class="other-section">
+      <li><a href="chatgpt.html" class="no-ch">ChatGPT</a></li>
+      <li><a href="claude.html" class="no-ch">Claude</a></li>
+      <li><a href="copilot.html" class="no-ch">Copilot</a></li>
+      <li><a href="deepseek.html" class="no-ch">DeepSeek</a></li>
+      <li><a href="duck_ai.html" class="no-ch">Duck AI</a></li>
+      <li><a href="gemini.html" class="no-ch">Gemini</a></li>
+      <li><a href="grok.html" class="no-ch">Grok</a></li>
+      <li><a href="kimi.html" class="no-ch">Kimi</a></li>
+      <li><a href="le_chat.html" class="no-ch">Le Chat</a></li>
+      <li><a href="luzia.html" class="no-ch">LuzIA</a></li>
+      <li><a href="perplexity.html" class="no-ch">Perplexity</a></li>
+      <li><a href="phind.html" class="no-ch">Phind</a></li>
+      <li><a href="qwen.html" class="no-ch">Qwen</a></li>
+   </ul>
+   </li>
+   <li><a href="prompts_educativos.html" class="daddy">Prompts educativos</a>
+   <ul class="other-section">
+      <li><a href="educacin_inclusiva.html" class="daddy">Educación inclusiva</a>
+      <ul class="other-section">
+         <li><a href="necesidades_individuales.html" class="no-ch">Necesidades individuales</a></li>
+         <li><a href="dua.html" class="no-ch">DUA</a></li>
+      </ul>
+      </li>
+      <li><a href="enseanza_y_metodologa.html" class="no-ch">Enseñanza y metodología</a></li>
+      <li><a href="estrategias_y_actuaciones.html" class="daddy">Estrategias y actuaciones</a>
+      <ul class="other-section">
+         <li><a href="gestin_del_aula.html" class="no-ch">Gestión del aula</a></li>
+         <li><a href="toma_de_decisiones.html" class="no-ch">Toma de decisiones</a></li>
+      </ul>
+      </li>
+      <li><a href="evaluacin_y_seguimiento.html" class="daddy">Evaluación y seguimiento</a>
+      <ul class="other-section">
+         <li><a href="herramientas_de_evaluacin.html" class="no-ch">Herramientas de evaluación</a></li>
+         <li><a href="evaluacin_formativa.html" class="no-ch">Evaluación formativa</a></li>
+         <li><a href="creacion_de_preguntas.html" class="no-ch">Creacion de preguntas</a></li>
+         <li><a href="seguimiento_del_progreso.html" class="no-ch">Seguimiento del progreso</a></li>
+      </ul>
+      </li>
+      <li><a href="material_didctico.html" class="daddy">Material Didáctico</a>
+      <ul class="other-section">
+         <li><a href="planificacin_de_clases.html" class="no-ch">Planificación de clases</a></li>
+         <li><a href="creacin_de_actividades.html" class="no-ch">Creación de actividades</a></li>
+         <li><a href="prcticas_y_experimentos.html" class="no-ch">Prácticas y experimentos</a></li>
+         <li><a href="desarrollo_de_abp.html" class="no-ch">Desarrollo de ABP</a></li>
+         <li><a href="ods.html" class="no-ch">ODS</a></li>
+         <li><a href="adaptar_material_didctico.html" class="no-ch">Adaptar material didáctico</a></li>
+         <li><a href="latex.html" class="no-ch">LaTeX</a></li>
+         <li><a href="textos.html" class="no-ch">Textos</a></li>
+      </ul>
+      </li>
+      <li><a href="situaciones_de_aprendizaje.html" class="no-ch">Situaciones de aprendizaje</a></li>
+   </ul>
+   </li>
+   <li><a href="ia_generativa_de_imgenes.html" class="daddy">IA Generativa de imágenes</a>
+   <ul class="other-section">
+      <li><a href="crear_imgenes.html" class="no-ch">Crear imágenes</a></li>
+      <li><a href="extraer_informacin.html" class="no-ch">Extraer información</a></li>
+   </ul>
+   </li>
+   <li><a href="recursos_para_docentes.html" class="daddy">Recursos para docentes</a>
+   <ul class="other-section">
+      <li><a href="formacin_en_ia.html" class="daddy">Formación en IA</a>
+      <ul class="other-section">
+         <li><a href="competencias_en_ia.html" class="no-ch">Competencias en IA</a></li>
+      </ul>
+      </li>
+      <li><a href="buscadores_de_herramientas.html" class="no-ch">Buscadores de herramientas</a></li>
+      <li><a href="software_libre.html" class="no-ch">Software libre</a></li>
+      <li><a href="grupos_telegram.html" class="no-ch">Grupos Telegram</a></li>
+      <li><a href="herramientas_ia.html" class="daddy">Herramientas IA</a>
+      <ul class="other-section">
+         <li><a href="audio.html" class="no-ch">Audio</a></li>
+         <li><a href="automatizacin.html" class="no-ch">Automatización</a></li>
+         <li><a href="bsqueda_e_investigacin.html" class="no-ch">Búsqueda e investigación</a></li>
+         <li><a href="crear_chatbots.html" class="no-ch">Crear Chatbots</a></li>
+         <li><a href="escritura.html" class="no-ch">Escritura</a></li>
+         <li><a href="imgenes.html" class="no-ch">Imágenes</a></li>
+         <li><a href="matemticas.html" class="no-ch">Matemáticas</a></li>
+         <li><a href="presentaciones.html" class="no-ch">Presentaciones</a></li>
+         <li><a href="pdf.html" class="no-ch">PDF</a></li>
+         <li><a href="todo_en_uno.html" class="no-ch">Todo en uno</a></li>
+         <li><a href="vdeos.html" class="no-ch">Vídeos</a></li>
+         <li><a href="utilidades_dua.html" class="no-ch">Utilidades DUA</a></li>
+         <li><a href="vibe_coding0.html" class="no-ch">Vibe coding</a></li>
+         <li><a href="otras_herramientas.html" class="no-ch">Otras herramientas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="manejo_de_ia_por_el_alumnado.html" class="daddy">Manejo de IA por el alumnado</a>
+   <ul class="other-section">
+      <li><a href="aprender_de_los_errores_de_la_ia.html" class="no-ch">Aprender de los errores de la IA</a></li>
+      <li><a href="actividades_generales.html" class="no-ch">Actividades generales</a></li>
+      <li><a href="actividades_en_lenguas.html" class="no-ch">Actividades en lenguas</a></li>
+      <li><a href="actividades_en_ciencias.html" class="no-ch">Actividades en ciencias</a></li>
+      <li><a href="actividades_en_ciencias_sociales.html" class="no-ch">Actividades en ciencias sociales</a></li>
+   </ul>
+   </li>
+   <li><a href="_un_asistente_para_el_recurso_.html" class="no-ch">- Un asistente para el recurso -</a></li>
+   <li><a href="_crditos_y_descarga_.html" class="no-ch">- Créditos y descarga -</a></li>
+   <li><a href="_opina_sobre_el_recurso_.html" class="no-ch">- Opina sobre el recurso -</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="mejorar_chatgpt.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>20</strong> de <strong>90</strong></span> <span class="sep">| </span><a href="chatbots.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Vibe coding</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_bulb" id="id204">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_bulb.png)"><h1 class="iDeviceTitle">Programando con lenguaje natural</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta204_685_2" class="block iDevice_content">
+<div class="exe-text"><p>
+<script type="text/javascript">
+// HACKeXe - Colapsa todos los iDevices de una página excepto el primero al que le quita el botón para colapasar
+$(window).load(function(){
+    $("p.toggle-idevice a").each(function(i){
+        if (i>0) $(this).click();
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+  // Encuentra el primer botón de expandir/colapsar y ocúltalo
+  var boton = document.querySelector("p.toggle-idevice a");
+  if (boton) {
+    boton.style.display = "none";
+  }
+});
+
+</script>
+</p>
+<figure class="exe-figure exe-image float-right license-CC-BY-SA" style="width: 280px;"><img src="vc.png" alt="Vibe coding" width="280" height="373" />
+<figcaption class="figcaption"><span class="author">Elaboración propia con ChatGPT</span>. <span class="title"><em>Vibe coding</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=ca" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><br />Desde que la primera versión de ChatGPT se abrió al público, los chatbots han tenido la capacidad de crear programas a partir de unas instrucciones de texto. El avance y desarrollo de los modelos extensos de lenguaje (LLM, por sus siglas en inglés, nombre que recibe la IA generativa) ha hecho que se popularice su uso como una forma de obtener programas creados a medida con utilidad personal.</p>
+<p><strong>El <em>vibe coding</em>, nombre propuesto en febrero de 2005 y que a veces se traduce como <em>programación de vibraciones</em> o <em>programas por sensaciones</em>, consiste en crear programas informáticos simplemente explicando al modelo de IA, qué es lo que queremos obtener.</strong></p>
+<p>Con seguridad, más de una vez hemos pensado en disponer de programas que nos permitiesen hacer exactamente lo que queremos, adaptándolos a nuestra situación concreta de aula. Pues bien, esto es lo que hace exactamente. A continuación, tenemos algunos ejemplos ilustrativos, pero la lista real la encontraremos en nuestras auténticas necesidades en la clase del día a día.</p>
+<div class="exe-fx exe-tabs">
+<h2>Ciencias</h2>
+<ul>
+<li>Simulador de cruces de alelos simples para las leyes de Mendel.</li>
+<li>Tabla interactiva de densidades y masas.</li>
+<li>Conversor entre unidades científicas básicas.</li>
+<li>Visualizador de gráficos de movimiento con datos manuales.</li>
+</ul>
+<h2>Matemáticas</h2>
+<ul>
+<li>Calculadora de ecuaciones lineales simples.</li>
+<li>Representador de funciones con valores tabulados.</li>
+<li>Calculadora geométrica de áreas y volúmenes.</li>
+<li>Convertidor de fracciones, decimales y porcentajes.</li>
+</ul>
+<h2>Lengua y literatura</h2>
+<ul>
+<li>Juego de clasificar palabras según su tipo.</li>
+<li>Formulario de análisis morfológico manual.</li>
+<li>Editor de textos con contador de palabras, frases y conectores.</li>
+<li>Juego de sinónimos y antónimos con opciones autocorregibles.</li>
+</ul>
+<h2>Historia y filosofía</h2>
+<ul>
+<li>Línea del tiempo editable con eventos históricos.</li>
+<li>Comparador de ideologías o etapas históricas con tablas desplegables.</li>
+<li>Cuestionario autocorregible sobre autores o movimientos.</li>
+</ul>
+<h2>Idiomas</h2>
+<ul>
+<li>Tarjetas de vocabulario por tema con autoevaluación.</li>
+<li>Ejercicio de completar huecos en frases predefinidas.</li>
+<li>Conjugador básico de verbos regulares e irregulares.</li>
+<li>Juego tipo test de frases correctas e incorrectas.</li>
+</ul>
+<h2>Educación física y salud</h2>
+<ul>
+<li>Calculadora de IMC y gasto calórico diario estimado.</li>
+<li>Planificador de rutinas semanales con categorías.</li>
+<li>Juego tipo trivial sobre primeros auxilios básicos.</li>
+</ul>
+<h2>Tecnología y digitalización</h2>
+<ul>
+<li>Editor HTML/CSS básico con vista previa en directo.</li>
+<li>Simulador de interruptor y bombilla.</li>
+<li>Formulario que evalúa la fortaleza de una contraseña con reglas simples.</li>
+</ul>
+</div>
+<figure class="exe-figure exe-image float-right" style="width: 196px;"><a title="Ajedrez para jugar dos personas en mesa horizontal con tablet o portátil abatible" class="exe-dialog-link" rel="lightbox" href="#t598d435e-0252-2d2c-bc2e-2cbf335c6da7" id="link598d435e-0252-2d2c-bc2e-2cbf335c6da7"><img src="captura_de_pantalla_de_2025_05_03_07_57_15.png" alt="Ejemplo de vibe coding" width="196" height="200" /></a>
+<figcaption class="figcaption"><span class="title"><em>Pulsa para ejecutar el programa</em></span></figcaption>
+</figure>
+<p><br />Aunque en Internet podremos encontrar aplicaciones que hacen muchas de estas actividades, ninguna de ellas estará personalizada según las necesidades y gustos de cada uno. Sin lugar a dudas, la IA ha abierto una nueva forma en la creación de recursos educativos inexistentes hasta hace muy poco. Sin necesidad de conocimientos de programación, podremos crear pequeñas aplicaciones que amplían y mejoran nuestra actividad docente.</p>
+<p>Al pulsar sobre la imagen del tablero de ajedrez, podrás ejecutar un programa que hemos incluido como ejemplo. Es un ajedrez hecho a medida para una situación concreta en un centro educativo en el que no hay tableros suficientes para organizar torneos con muchos jugadores, pero sí se dispone de ordenadores portátiles abatibles, por lo que el tablero puede colocarse en horizontal sobre la mesa para jugar. Originalmente publicado en la web: <a href="https://labia.tiddlyhost.com/#Ajedrez">Laboratorio de Aplicaciones Educativas</a>.</p>
+<div id="t598d435e-0252-2d2c-bc2e-2cbf335c6da7" class="exe-dialog-text js-hidden"><iframe width="100%" height="600" style="border: none;" src="https://bilateria.org/app/juegos/ajedrez.html" title="Ajedrez interactivo" loading="lazy" allowfullscreen="allowfullscreen"></iframe></div></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Fuentes" /></div><div class="feedback js-feedback js-hidden"><ul>
+<li>De Haro, J. J. (2025, 26 de enero). Cómo crear aplicaciones educativas con inteligencia artificial para integrarlas en tus recursos digitales. Bilateria. <a href="https://educacion.bilateria.org/como-crear-aplicaciones-educativas-con-inteligencia-artificial-para-integrarlas-en-tus-recursos-digitales">https://educacion.bilateria.org/como-crear-aplicaciones-educativas-con-inteligencia-artificial-para-integrarlas-en-tus-recursos-digitales</a></li>
+<li>Pastor, J. (2025, 29 de marzo). "En un año o dos los editores de código no van a existir": cuatro programadores nos explican la revolución del vibe coding. Xataka. <a href="https://www.xataka.com/robotica-e-ia/fiebre-vibe-coding-nos-acerca-a-futuro-que-programaremos-saber-programar-cuatro-expertos-nos-aclaran-fenomeno">https://www.xataka.com/robotica-e-ia/fiebre-vibe-coding-nos-acerca-a-futuro-que-programaremos-saber-programar-cuatro-expertos-nos-aclaran-fenomeno</a></li>
+<li>Vibe coding. (2025, 26 de marzo). En Wikipedia, la enciclopedia libre. <a class="underline" href="https://es.wikipedia.org/wiki/Vibe_coding">https://es.wikipedia.org/wiki/Vibe_coding</a></li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_present" id="id205">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Técnica del Vibe coding</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta205_686_2" class="block iDevice_content">
+<div class="exe-text"><h2>Inicio</h2>
+<p>Para que la IA nos diseñe un programa bastará con decirle que deseamos un programa HTML, indicándole qué queremos que haga. Un prompt típico sería:</p>
+<table style="width: 90%; margin-left: auto; margin-right: auto;" border="1" class="exe-table">
+<tbody>
+<tr>
+<td style="width: 100%;"><em>Haz una aplicación en <a href="#teb1b7dc0-b3f3-a803-5d74-7fe843dacb24" id="linkeb1b7dc0-b3f3-a803-5d74-7fe843dacb24" class="exe-tooltip definition-tt titled-tt" title="HTML | ">HTML</a> que sea <a href="#t31a788cf-d836-5d95-e8d0-121d243455ea" id="link31a788cf-d836-5d95-e8d0-121d243455ea" class="exe-tooltip definition-tt titled-tt" title="Interactivo | ">interactiva</a> y <a href="#t2b49cc7d-fa4b-f848-63c2-d29bb70ca7ca" id="link2b49cc7d-fa4b-f848-63c2-d29bb70ca7ca" class="exe-tooltip definition-tt titled-tt" title="Responsivo | ">responsiva</a> para [indicar aquí el objetivo del programa y las características que deberá tener]</em></td>
+</tr>
+<tr>
+<td style="width: 100%;">
+<p>Veamos algunos ejemplos con los prompts empleados:</p>
+<ul>
+<li>Simulador de órbitas planetarias: <a title="Simulador de órbitas planetarias" class="exe-dialog-link" rel="lightbox" href="#t441379d6-e7e9-11cb-485d-fd838ead53a6" id="link441379d6-e7e9-11cb-485d-fd838ead53a6">Prompt</a>, <a title="Simulador de órbitas planetarias" class="exe-dialog-link" rel="lightbox" href="#t50232376-f60d-f284-76db-b37e0346bfa5" id="link50232376-f60d-f284-76db-b37e0346bfa5">programa</a>.</li>
+<li>Leyes de Mendel: <a title="Leyes de Mendel" class="exe-dialog-link" rel="lightbox" href="#t88fd825e-19e4-1b80-2c66-2e007ce28856" id="link88fd825e-19e4-1b80-2c66-2e007ce28856">Prompt</a>, <a title="Leyes de Mendel" class="exe-dialog-link" rel="lightbox" href="#t190b8b9c-5378-c1f9-41b8-4f04a3dfb2cc" id="link190b8b9c-5378-c1f9-41b8-4f04a3dfb2cc">programa</a>.</li>
+<li>Clasificación en seres vivos o inertes. <a title="Clasificación" class="exe-dialog-link" rel="lightbox" href="#t17dfb3f6-e887-6e55-3ed7-20cc3e69c580" id="link17dfb3f6-e887-6e55-3ed7-20cc3e69c580">Prompt</a>. <a title="Clasificación seres vivos" class="exe-dialog-link" rel="lightbox" href="#tbadcdbcd-7c73-cae0-7113-f3a93dbd28cd" id="linkbadcdbcd-7c73-cae0-7113-f3a93dbd28cd">Programa</a>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>En los ejemplos anteriores, las aplicaciones aparecen en dos idiomas cuando en realidad no se le ha dicho nada en el prompt, también tienen un pie a modo de firma. Esto es así porque se han especificado en la configuración del chatbot con el que han sido creadas estas opciones. Si hay aspectos que añadimos siempre, en lugar de especificarlo en el prompt lo podemos indicar en la configuración del propio chatbot. No todos permiten añadir instrucciones que se aplicarán siempre, entre los que sí lo permiten se encuentran: ChatGPT, Grok o Gemini.</p>
+<h2>Depuración</h2>
+<p>Una vez tengamos la primera versión de nuestra aplicación, podremos ir pidiendo mejoras como modificar el aspecto, añadir funcionalidades, etc. Debemos tener presente que actualmente las IA solo pueden hacer programas simples. Si intentamos que hagan demasiadas cosas, posiblemente nos encontraremos con múltiples problemas, como que generen errores que no seamos capaces de eliminar.</p>
+<p>Si un programa nos da un error, debemos copiárselo a la IA para que intente arreglarlo.</p>
+<p>Si vemos que la aplicación inicial se aleja demasiado de lo que queremos obtener, podemos empezar una nueva conversación, incluyendo aquellos aspectos que hemos visto que no ha resuelto bien la primera vez, de este modo, conseguimos una primera versión más acorde con nuestros deseos.</p>
+<p></p>
+<div id="t441379d6-e7e9-11cb-485d-fd838ead53a6" class="exe-dialog-text js-hidden">
+<p>Haz un programa en HTML, que sea responsivo, interactivo y que nos permita visualizar gráficamente los planetas girando siguiendo órbitas elípticas</p>
+</div>
+<div id="t50232376-f60d-f284-76db-b37e0346bfa5" class="exe-dialog-text js-hidden"><iframe width="100%" height="600px" style="border: none;" src="https://bilateria.org/app/cn/simulador_orbitas_planetarias.html"></iframe></div>
+<div id="t88fd825e-19e4-1b80-2c66-2e007ce28856" class="exe-dialog-text js-hidden">
+<p>Haz una aplicación html donde de forma muy visual se pongan en práctica las leyes de mendel. Debe generar ejercicios aleatorios y autocorregibles para que el alumnado pueda practicar tanto como quiera.</p>
+</div>
+<div id="t190b8b9c-5378-c1f9-41b8-4f04a3dfb2cc" class="exe-dialog-text js-hidden"><iframe width="100%" height="600px" style="border: none;" src="https://bilateria.org/app/bio/leyes-mendel-app.html"></iframe></div>
+<div id="t17dfb3f6-e887-6e55-3ed7-20cc3e69c580" class="exe-dialog-text js-hidden">
+<p>Crea una aplicación en HTML, interactiva y responsiva para niños de primaria donde haya que clasificar diferentes emoticonos en seres vivos o inertes</p>
+</div>
+<div id="tbadcdbcd-7c73-cae0-7113-f3a93dbd28cd" class="exe-dialog-text js-hidden"><iframe width="100%" height="900px" style="border: none;" src="https://bilateria.org/app/bio/primaria/clasificacion_seres_vivos.html"></iframe></div>
+<div id="t2b49cc7d-fa4b-f848-63c2-d29bb70ca7ca" class="exe-tooltip-text">
+<p>Una aplicación responsiva se adapta a diferentes dispositivos como ordenadores, móviles o tablets.</p>
+</div>
+<div id="t31a788cf-d836-5d95-e8d0-121d243455ea" class="exe-tooltip-text">
+<p>Si no especificamos que sea interactivo, quizás nos haga únicamente un documento con texto estático. Convienen indicarlo desde el principio</p>
+</div>
+<div id="teb1b7dc0-b3f3-a803-5d74-7fe843dacb24" class="exe-tooltip-text">
+<p>El HTML es el formato usado por las páginas web, indicándolo de este modo, nos aseguramos que la aplicación podrá ser compartida sin dificultad entre el alumnado.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_present" id="id207">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">¿Qué chatbot elijo para hacer mi aplicación?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta207_685_2" class="block iDevice_content">
+<div class="exe-text"><p>Cualquier chatbot nos hará una aplicación, pero no todas nos permiten ver el resultado <em>in situ</em>, es decir, sin salir del chat. Los chatbots que no permiten ejecutar el código directamente son Copilot y Perplexity. En tareas de programación destacan <strong>Claude</strong>, <strong>ChatGPT</strong>, <strong>Grok</strong> y <strong>Gemini</strong> y son los que recomendamos para comenzar. Para decidirnos por uno u otro, podemos utilizar un programa como <a href="https://labia.tiddlyhost.com/#Multiprompt">Multiprompt</a> que nos lanza el mismo prompt en diferentes chatbots. Una vez veamos el que más nos gusta, podemos continuar con él.</p>
+<p><strong>Gemini</strong> destaca por la posibilidad de incluir inteligencia artificial en los propios programas, de forma que podemos hacer aplicaciones inteligentes, capaces de responder al usuario en sus necesidades. Podemos indicarle que deseamos el uso de IA para determinadas acciones de nuestro programa, pero también hay un botón (✨) que añade características de IA a nuestro programa. En este último caso, Gemini decide la función que se añadirá y que identificará con el mismo icono estrellado. Si no nos interesan los cambios que ha hecho, podemos utilizar el botón deshacer para volver a la versión anterior.</p>
+<p>Cuando se nos acaben las interacciones gratuitas del chatbot que estemos usando, aparte de esperar a que se reinicien, podemos copiar el código y pasarnos a otra sesión con el mismo chatbot con un usuario diferente o bien, pegar el programa en otro chatbot diferente para continuarlo.</p>
+<p>Existen servicios que son chatbots, que nos permiten realizar estas mismas tareas, los podrás encontrar en la sección de Herramientas: <a href="vibe_coding0.html">Vibe Coding</a>.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_present" id="id208">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Cómo compartir las aplicaciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta208_685_2" class="block iDevice_content">
+<div class="exe-text"><p></p>
+<p></p>
+<div class="exe-fx exe-accordion">
+<h2>Compartir directamente desde el propio chatbot</h2>
+<p>Algunos chatbots como <strong>Gemini</strong>, <strong>ChatGPT</strong> y <strong>Claude</strong> permiten compartir directamente la aplicación a través de un enlace. ChatGPT tiene la ventaja de que, al actualizar el programa, permite <strong>actualizar el mismo enlace</strong>, sin necesidad de cambiarlo. Sin embargo, Claude proporciona una dirección diferente para cada nueva versión que hagamos.</p>
+<table style="width: 600px;" border="1" class="exe-table">
+<tbody>
+<tr>
+<td style="width: 50%;"><a href="captura_de_pantalla_de_2025_05_08_10_18_49.png" rel="lightbox"><img src="captura_de_pantalla_de_2025_05_08_10_18_49.png" alt="Compartir aplicación en ChatGPT" width="300" height="180" /></a></td>
+<td style="width: 50%;"><a href="captura_de_pantalla_de_2025_05_08_10_23_08.png" rel="lightbox"><img src="captura_de_pantalla_de_2025_05_08_10_23_08.png" alt="Compartir aplicación con Claude" width="300" height="281" /></a></td>
+</tr>
+<tr>
+<td style="width: 50%;" colspan="2"><em>Cuadros de diálogo para compartir aplicaciones de ChatGPT y Claude</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2>Guardar como página web de forma local</h2>
+<p>Guardar el programa como página web nos permite abrirla desde el propio ordenador. Simplemente abriendo el archivo, la aplicación se abrirá en el navegador que tengamos predeterminado, De este modo podemos:</p>
+<ul>
+<li>Enviarla a los alumnos por cualquier sistema de comunicación (correo electrónico, Google Drive, Classroom, etc.) para que se la descarguen y la puedan visualizar desde su propio dispositivo.</li>
+<li>Subirla a un servicio de alojamiento web para visualizarla directamente en el navegador proporcionando su dirección de Internet. Véase GitHub más adelante.</li>
+</ul>
+<p>En Claude, Grok y Le Chat disponemos de un botón que permite descargar directamente la aplicación en formato de página web, HTML. En el resto de chatbots podemos copiar el código (todos los chatbots disponen de botones para copiar el contenido sin necesidad de seleccionar con el ratón el texto) y pegaro en algún programa que permita descargar el contenido en formato de texto puro (formato de texto o txt) asegurándonos que cuando lo guardamos, le ponemos extensión HTML, para que quede algo así: <em>mi_aplicación.html</em>. Puedes consultar cómo hacerlo para cualquier programa a continuación:</p>
+<div style="font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto; padding: 15px; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+<p style="margin-bottom: 15px; display: inline-block;">¿Cómo puedo crear un archivo HTML con el programa <input type="text" id="programName" placeholder="¿Programa?" style="display: inline-block; width: 150px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;" /> a partir del código que he copiado de la IA?</p>
+<button onclick="openGrok()" style="background-color: #4285f4; color: white; border: none; margin-left: 10px; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold;">Consultar</button>
+<script>
+        function openGrok() {
+            const programName = document.getElementById('programName').value.trim();
+            if (programName) {
+                const prompt = encodeURIComponent(`¿Cómo puedo crear un archivo HTML con el programa ${programName} a partir del código HTML que he copiado de la IA?`);
+                window.open(`https://chatgpt.com/?q=${prompt}`, '_blank');
+            } else {
+                alert('Por favor, introduce el nombre de un programa');
+            }
+        }
+    </script>
+</div>
+<br />
+<h2>Insertar en Google Sites</h2>
+<p>Es posible insertar el código directamente en una página de Google Sites, aunque con determinados programas el resultado podría no ser el esperado. Recomendamos comprobar que el programa actúa como se espera una vez insertado.</p>
+<p>El proceso es bastante sencillo. En primer lugar, copiamos el código directamente de la IA, abrimos Google Sites y en cualquier página pulsamos en el menú que hay en la parte derecha de la página: <strong>Insertar &gt; Insertar &gt; Insertar código &gt; Siguiente</strong>. En este momento aparecerá nuestro programa, si es necesario, modificamos su tamaño para que se vea de forma óptima.</p>
+<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 600px;"><img src="sites.png" alt="Inserción de la aplicación en una página de Google Sites" width="600" height="303" />
+<figcaption class="figcaption"><span class="author">Elaboración propia</span>. <span class="title"><em>Inserción de la aplicación en una página de Google Sites</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
+</figure>
+<h2>Publicar en un servicio web: GitHub</h2>
+<p><a href="https://github.com">GitHub</a> es un servicio gratuito para la creación de software donde podemos subir nuestras páginas web creadas con IA, tal como se ha explicado anteriormente en el apartado <strong>Guardar como página web de forma local</strong>.</p>
+<p>Podemos crear repositorios donde se alojarán nuestras aplicaciones y accederemos a ellas a través de la URL que GitHub nos proporciona. La siguiente presentación resume el proceso.</p>
+<p style="text-align: center;"><iframe width="960" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vQitmFd8DJMJ6nFoOrR4wPdcrlCNd7nvDH_bOYgSqKzIJ_192FBv8MHsIZzd4zXir9LErJwkJplPBOF/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></p>
+</div>
+<p>Desde el grupo <a href="https://vibe-coding-educativo.github.io/app_edu/" target="_blank" rel="noopener">Vibe Coding Educativo</a> se ha creado un repositorio de aplicaciones educativas diseñadas por la comunidad de docentes. Puedes verla en la página: <a href="https://vibe-coding-educativo.github.io/app_edu/" target="_blank" rel="noopener">Repositorio de aplicaciones educativas</a>.<br /><br /></p>
+<p></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Fuentes" /></div><div class="feedback js-feedback js-hidden"><p>En la siguiente página se dan fundamentos básicos para crear aplicaciones: <a href="https://labia.tiddlyhost.com/#Vibe%20Coding%20Educativo" target="_blank" rel="noopener">Vibe coding educativo</a>.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="mejorar_chatgpt.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>20</strong> de <strong>90</strong></span> <span class="sep">| </span><a href="chatbots.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
